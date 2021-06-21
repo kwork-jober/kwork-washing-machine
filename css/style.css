@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
+/*Обнуление*/
+
 * {
   padding: 0;
   margin: 0;
@@ -91,9 +93,9 @@ h6 {
 
 /*--------------------*/
 
-.wrapper .madal_window__block .madal_window .body .user_name_block .user_name,
-.wrapper .madal_window__block .madal_window .body .phone_block .phone_title,
-.wrapper .madal_window__block .madal_window .body .problem_block .problem_title,
+.wrapper .madal_window .madal_window__block .body .user_name_block .user_name,
+.wrapper .madal_window .madal_window__block .body .phone_block .phone_title,
+.wrapper .madal_window .madal_window__block .body .problem_block .problem_title,
 .wrapper .wrapper__grid .content .problem .container .problem__block .body .body__container .body__row .body__item .item__column .item__title,
 .wrapper .wrapper__grid .content .about_us .container .about_us__block .body .body__container .body__row .body__item .list li span,
 .wrapper .wrapper__grid .content .what_we .container .what__block .body .body__container .body__row .body__item .item__column .item__title,
@@ -111,7 +113,7 @@ h6 {
   line-height: 22px;
 }
 
-.wrapper .madal_window__block .madal_window .button__block .button,
+.wrapper .madal_window .madal_window__block .button .button__text,
 .wrapper .wrapper__grid .content .main .container .main__block .title__container .title,
 .wrapper .wrapper__grid .content .main .go_contact .go_contact__row .go_contact__item .go_contact__text,
 .wrapper .wrapper__grid .content nav .container .title,
@@ -132,14 +134,14 @@ h6 {
 .wrapper .wrapper__grid .footer .container .footer__row .footer__item .contact__container .contact__column .messengers .messengers__row .telegram,
 .wrapper .get_contact_button,
 .wrapper .get_contact_button:hover,
-.wrapper .madal_window__block,
-.wrapper .madal_window__block .madal_window,
-.wrapper .madal_window__block .madal_window .close,
-.wrapper .madal_window__block .madal_window .close:hover,
-.wrapper .madal_window__block .madal_window .button__block .button,
-.wrapper .madal_window__block .madal_window .button__block .button:hover,
-.wrapper .madal_window__block.active,
-.wrapper .madal_window__block.active .madal_window,
+.wrapper .madal_window,
+.wrapper .madal_window .madal_window__block,
+.wrapper .madal_window .madal_window__block .close,
+.wrapper .madal_window .madal_window__block .close:hover,
+.wrapper .madal_window .madal_window__block .button,
+.wrapper .madal_window .madal_window__block .button:hover,
+.wrapper .madal_window.active,
+.wrapper .madal_window.active .madal_window__block,
 .wrapper .wrapper__grid .header .container .header__row .header__item .phone .phone__row .phone__item .phone__img .img,
 .wrapper .wrapper__grid .header .container .header__row .header__item .phone .phone__row .phone__item .phone__img:hover .img,
 .wrapper .wrapper__grid .content .main .go_contact .go_contact__row .go_contact__item .go_contact__img .img,
@@ -402,32 +404,32 @@ h6 {
   transform: translate(0, 0);
 }
 
-.wrapper .madal_window__block .madal_window .body .user_name_block .input,
-.wrapper .madal_window__block .madal_window .body .phone_block .input,
-.wrapper .madal_window__block .madal_window .body .problem_block .input {
+.wrapper .madal_window .madal_window__block .body .user_name_block .input,
+.wrapper .madal_window .madal_window__block .body .phone_block .input,
+.wrapper .madal_window .madal_window__block .body .problem_block .input {
   width: 90%;
   height: 40px;
   border: 1px solid #4A4A4B;
 }
 
-.wrapper .madal_window__block .madal_window .body .user_name_block .input input,
-.wrapper .madal_window__block .madal_window .body .phone_block .input input,
-.wrapper .madal_window__block .madal_window .body .problem_block .input textarea {
+.wrapper .madal_window .madal_window__block .body .user_name_block .input input,
+.wrapper .madal_window .madal_window__block .body .phone_block .input input,
+.wrapper .madal_window .madal_window__block .body .problem_block .input textarea {
   width: 100%;
   height: 100%;
   padding: 10px;
   font-size: 16px;
 }
 
-.wrapper .madal_window__block .madal_window .body .user_name_block .user_name,
-.wrapper .madal_window__block .madal_window .body .phone_block .phone_title,
-.wrapper .madal_window__block .madal_window .body .problem_block .problem_title {
+.wrapper .madal_window .madal_window__block .body .user_name_block .user_name,
+.wrapper .madal_window .madal_window__block .body .phone_block .phone_title,
+.wrapper .madal_window .madal_window__block .body .problem_block .problem_title {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.wrapper .madal_window__block {
+.wrapper .madal_window {
   transition-duration: 1s;
   opacity: 0;
   visibility: hidden;
@@ -438,7 +440,7 @@ h6 {
   z-index: 70;
 }
 
-.wrapper .madal_window__block .madal_window {
+.wrapper .madal_window .madal_window__block {
   transition-duration: 1s;
   position: relative;
   top: 50%;
@@ -450,7 +452,7 @@ h6 {
   padding: 20px;
 }
 
-.wrapper .madal_window__block .madal_window .close {
+.wrapper .madal_window .madal_window__block .close {
   position: absolute;
   right: 20px;
   top: 30px;
@@ -459,12 +461,12 @@ h6 {
   cursor: pointer;
 }
 
-.wrapper .madal_window__block .madal_window .close:hover {
+.wrapper .madal_window .madal_window__block .close:hover {
   transform: scale(0.9);
 }
 
-.wrapper .madal_window__block .madal_window .close::before,
-.wrapper .madal_window__block .madal_window .close::after {
+.wrapper .madal_window .madal_window__block .close::before,
+.wrapper .madal_window .madal_window__block .close::after {
   position: absolute;
   content: "";
   background-color: #4A4A4B;
@@ -472,57 +474,53 @@ h6 {
   width: 20px;
 }
 
-.wrapper .madal_window__block .madal_window .close::before {
+.wrapper .madal_window .madal_window__block .close::before {
   transform: rotate(-45deg);
 }
 
-.wrapper .madal_window__block .madal_window .close::after {
+.wrapper .madal_window .madal_window__block .close::after {
   transform: rotate(45deg);
 }
 
-.wrapper .madal_window__block .madal_window .body {
+.wrapper .madal_window .madal_window__block .body {
   position: relative;
   top: 25px;
 }
 
-.wrapper .madal_window__block .madal_window .body .user_name_block {
+.wrapper .madal_window .madal_window__block .body .user_name_block {
   margin-bottom: 20px;
 }
 
-.wrapper .madal_window__block .madal_window .body .user_name_block .input._error {
-  border: 1px solid #E91D1D;
-}
-
-.wrapper .madal_window__block .madal_window .body .phone_block {
+.wrapper .madal_window .madal_window__block .body .phone_block {
   margin-bottom: 20px;
 }
 
-.wrapper .madal_window__block .madal_window .body .phone_block .input._error {
-  border: 1px solid #E91D1D;
-}
-
-.wrapper .madal_window__block .madal_window .body .problem_block {
+.wrapper .madal_window .madal_window__block .body .problem_block {
   margin-bottom: 20px;
 }
 
-.wrapper .madal_window__block .madal_window .body .problem_block .input {
+.wrapper .madal_window .madal_window__block .body .problem_block .input {
   height: 80px;
 }
 
-.wrapper .madal_window__block .madal_window .body .problem_block .input textarea {
+.wrapper .madal_window .madal_window__block .body .problem_block .input textarea {
   overflow-y: auto;
   overflow-x: hidden;
   resize: none;
 }
 
-.wrapper .madal_window__block .madal_window .button__block .button {
-  display: block;
+.wrapper .madal_window .madal_window__block .button {
   position: absolute;
   bottom: 10px;
   left: 10px;
   width: 95%;
   background-color: #4878F5;
   padding: 20px;
+  cursor: pointer;
+}
+
+.wrapper .madal_window .madal_window__block .button .button__text {
+  display: block;
   font-size: 22px;
   color: #F8F8F9;
   text-transform: none;
@@ -530,17 +528,17 @@ h6 {
   text-align: center;
 }
 
-.wrapper .madal_window__block .madal_window .button__block .button:hover {
+.wrapper .madal_window .madal_window__block .button:hover {
   background-color: #1c4dca;
 }
 
-.wrapper .madal_window__block.active {
+.wrapper .madal_window.active {
   transition-duration: 1s;
   opacity: 1;
   visibility: visible;
 }
 
-.wrapper .madal_window__block.active .madal_window {
+.wrapper .madal_window.active .madal_window__block {
   transition-duration: 1s;
   position: relative;
   top: 50%;
@@ -1842,7 +1840,7 @@ h6 {
 }
 
 @media (max-width: 520px) {
-  .wrapper .madal_window__block .madal_window .button__block .button,
+  .wrapper .madal_window .madal_window__block .button .button__text,
   .wrapper .wrapper__grid .content .main .container .main__block .title__container .title,
   .wrapper .wrapper__grid .content .main .go_contact .go_contact__row .go_contact__item .go_contact__text,
   .wrapper .wrapper__grid .content nav .container .title,
