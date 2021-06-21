@@ -378,7 +378,7 @@ h6 {
 
 .wrapper {
   overflow: hidden;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   background-color: #F8F8F9;
 }
 
@@ -1161,7 +1161,16 @@ h6 {
   grid-template-columns: minmax(auto, 195px) 1fr minmax(auto, 145px);
   -ms-grid-rows: 1fr 15px 1fr 15px 1fr 15px 1fr 15px 1fr 15px 1fr 15px 1fr 15px 1fr 15px 1fr 15px 1fr;
   grid-template-rows: repeat(10, 1fr);
-      grid-template-areas: "title_kind none title_prise" "kind1 arrows1 prise1" "kind2 arrows2 prise2" "kind3 arrows3 prise3" "kind4 arrows4 prise4" "kind5 arrows5 prise5" "kind6 arrows6 prise6" "kind7 arrows7 prise7" "kind8 arrows8 prise8" "kind9 arrows9 prise9";
+      grid-template-areas: "title_kind none title_prise"
+ "kind1 arrows1 prise1"
+ "kind2 arrows2 prise2"
+ "kind3 arrows3 prise3"
+ "kind4 arrows4 prise4"
+ "kind5 arrows5 prise5"
+ "kind6 arrows6 prise6"
+ "kind7 arrows7 prise7"
+ "kind8 arrows8 prise8"
+ "kind9 arrows9 prise9";
   row-gap: 15px;
 }
 
